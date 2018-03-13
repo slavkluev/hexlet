@@ -10,6 +10,11 @@ const cli = meow(`
  
     Examples
       $ hexlet slavkluev
+          
+      Courses finished 24
+          Independence 100.0%
+                Points 1436
+                Rating 253
 `);
 
 updateNotifier({pkg: cli.pkg}).notify();
