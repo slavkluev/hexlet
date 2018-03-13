@@ -2,6 +2,7 @@
 'use strict';
 const meow = require('meow');
 const osmosis = require('osmosis');
+const updateNotifier = require('update-notifier');
 
 const cli = meow(`
     Usage
@@ -11,10 +12,12 @@ const cli = meow(`
       $ hexlet slavkluev
 `);
 
+updateNotifier({pkg: cli.pkg}).notify();
+
 let login = cli.input[0];
 
 osmosis
-    .get('https://en.hexlet.io/u/' + login)
+    .get('https://ru.hexlet.io/u/' + login)
     .find('div.col-12.col-md-6.col-lg-3.text-center.text-primary > div')
     .set('coursesFinished')
     .find('div.col-12.col-md-6.col-lg-3.text-center.text-warning > div')
@@ -28,6 +31,7 @@ osmosis
   Courses finished ${data.coursesFinished}
       Independence ${data.independence}
             Points ${data.points}
-            Rating ${data.rating}`;
+            Rating ${data.rating}
+            `;
         console.log(output);
     });

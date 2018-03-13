@@ -1,9 +1,8 @@
 {
   "name": "hexlet-stats",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "license": "MIT",
-  "main": "cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +13,7 @@
   ],
   "dependencies": {
     "meow": "^4.0.0",
-    "osmosis": "^1.1.6"
+    "osmosis": "^1.1.6",
+    "update-notifier": "^2.3.0"
   }
 }
