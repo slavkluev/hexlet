@@ -1,12 +1,16 @@
 {
   "name": "hexlet-stats",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "license": "MIT",
+  "repository": "slavkluev/hexlet-stats",
+  "author": {
+    "name": "Viacheslav Kliuev",
+    "email": "slavkluev@yandex.ru"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
   "bin": "cli.js",
   "files": [
     "cli.js"
