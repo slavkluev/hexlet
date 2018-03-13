@@ -18,6 +18,9 @@ $ hexlet-stats --help
   Usage
     $ hexlet <login>
    
+  Options
+   	--json -j     Output the result as JSON
+   	  
   Examples
     $ hexlet slavkluev
     

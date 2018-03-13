@@ -7,6 +7,9 @@ const updateNotifier = require('update-notifier');
 const cli = meow(`
     Usage
       $ hexlet <login>
+      
+    Options
+	  --json -j     Output the result as JSON
  
     Examples
       $ hexlet slavkluev
@@ -15,7 +18,14 @@ const cli = meow(`
           Independence 100.0%
                 Points 1436
                 Rating 253
-`);
+`, {
+    flags: {
+        json: {
+            type: 'boolean',
+            alias: 'j'
+        }
+    }
+});
 
 updateNotifier({pkg: cli.pkg}).notify();
 
@@ -31,12 +41,17 @@ osmosis
     .set('points')
     .find('div.row.px-4.mt-5.justify-content-center > div:nth-child(4) > div')
     .set('rating')
-    .data(function(data) {
+    .data(function(stats) {
+        if (cli.flags.json) {
+            console.log(JSON.stringify(stats));
+            return;
+        }
+
         let output = `
-  Courses finished ${data.coursesFinished}
-      Independence ${data.independence}
-            Points ${data.points}
-            Rating ${data.rating}
+  Courses finished ${stats.coursesFinished}
+      Independence ${stats.independence}
+            Points ${stats.points}
+            Rating ${stats.rating}
             `;
         console.log(output);
     });
