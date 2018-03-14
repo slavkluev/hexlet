@@ -9,7 +9,7 @@ const cli = meow(`
       $ hexlet <login>
       
     Options
-	  --json -j     Output the result as JSON
+      --json -j     Output the result as JSON
  
     Examples
       $ hexlet slavkluev

@@ -19,7 +19,7 @@ $ hexlet-stats --help
     $ hexlet <login>
    
   Options
-   	--json -j     Output the result as JSON
+    --json -j     Output the result as JSON
    	  
   Examples
     $ hexlet slavkluev
