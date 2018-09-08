@@ -18,13 +18,13 @@
     "cli.js"
   ],
   "dependencies": {
-    "meow": "^4.0.1",
+    "meow": "^5.0.0",
     "osmosis": "^1.1.8",
     "update-notifier": "^2.5.0"
   },
   "devDependencies": {
     "eslint": "^5.5.0",
-    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1"
