@@ -14,20 +14,21 @@ $ npm install --global hexlet-stats
 
 ```
 $ hexlet-stats --help
-
+  
   Usage
-    $ hexlet <login>
-   
+    $ hexlet-stats <login>
+      
   Options
     --json -j     Output the result as JSON
-   	  
+ 
   Examples
-    $ hexlet slavkluev
-    
+    $ hexlet-stats slavkluev
+          
     Courses finished 24
         Independence 100.0%
-              Points 1436
-              Rating 253
+              Points 1445
+    Challenges count 10
+              Rating #356
 ```
 
 
